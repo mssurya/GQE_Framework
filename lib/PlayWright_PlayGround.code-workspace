@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../playwright-typescript-playwright-test"
+		},
+		{
+			"name": "GQE_Framework",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
