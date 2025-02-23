@@ -6,6 +6,9 @@
 		{
 			"name": "GQE_Framework",
 			"path": ".."
+		},
+		{
+			"path": "../../playwright-cucumber-tests"
 		}
 	],
 	"settings": {}

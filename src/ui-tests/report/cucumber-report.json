@@ -1,0 +1,291 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-call-tests;get-specific-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get specific user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have a request context",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40786499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a request to get a specific user with gender \"male\" and status \"active\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 665354199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5045700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should be OK",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1368500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "print the response details",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83934099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-call-tests;get-all-users",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Get all users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I have a request context",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40355600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I send a request to get all users",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674406299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9259799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the response should be OK",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2765300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "print the response details",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92122699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-call-tests;dispose-the-response-after-getting-the-response-of-users",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Dispose the response after getting the response of Users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "a request to the users endpoint",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204471900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the response is received",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7374800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1101999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the response should be OK",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 803700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the response body is disposed",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5508299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-call-tests;dispose-the-response-after-getting-the-response-of-specific-users",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Dispose the response after getting the response of Specific Users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "a request to the specific user endpoint",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285607000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the second response is received",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17137800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the specific user response body is also disposed",
+            "match": {
+              "location": "src\\test\\api\\steps\\getUsersSteps.ts:129"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16254300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-call-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Call Tests",
+    "tags": [],
+    "uri": "src\\test\\api\\features\\getUsers.feature"
+  }
+]

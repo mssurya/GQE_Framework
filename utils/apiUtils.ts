@@ -1,9 +1,9 @@
-import { APIRequestContext } from 'playwright';
+import { APIRequestContext,request } from 'playwright';
 
 export const setupRequestContext = async (baseURL: string, token: string): Promise<APIRequestContext> => {
-    const requestContext = await APIRequestContext.newContext({
+    const requestContext = await request.newContext({
         baseURL,
-        headers: {
+        extraHTTPHeaders: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
         }
@@ -12,8 +12,8 @@ export const setupRequestContext = async (baseURL: string, token: string): Promi
 };
 
 export const handleResponse = (response: Response) => {
-    if (!response.ok()) {
-        throw new Error(`Request failed with status ${response.status()}: ${response.statusText()}`);
+    if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}: ${response.statusText}`);
     }
     return response.json();
 };

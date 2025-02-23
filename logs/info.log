@@ -32,3 +32,5 @@
 {"level":"info","message":"Test Case Completed : Verify the text contents of PDF file. Status : passed"}
 {"level":"info","message":"Test Case Started : Verify Widgets Page"}
 {"level":"info","message":"Test Case Completed : Verify Widgets Page Status : passed"}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
+{"level":"error","message":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."}
