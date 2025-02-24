@@ -17,7 +17,7 @@ const reportConfig: OrtoniReportConfig = {
   authorName: "GQE-MS Surya",
   preferredTheme: "dark",
   folderPath: "html-report",
-  projectName: "Playwright Framework with Typescript",
+  projectName: "GQE Playwright Framework with Typescript",
 }
 
 const config: PlaywrightTestConfig = {

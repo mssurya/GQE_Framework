@@ -60,14 +60,6 @@ When('I create a new user with random email', async () => {
   });
 });
 
-Then('the response status should be {int}', async (statusCode: number) => {
-  expect(apiPostResponse.status()).toBe(statusCode);
-});
-
-Then('the response status text should be {string}', async (statusText: string) => {
-  expect(apiPostResponse.statusText()).toBe(statusText);
-});
-
 Then('the response should contain the user ID', async () => {
   const postJsonResponse = await apiPostResponse.json();
   userId = postJsonResponse.id;

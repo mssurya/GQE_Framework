@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 25709199
+              "duration": 48418099
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 4,
             "name": "a new API request context is created",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:23"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 11900900
+              "duration": 11934199
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 7,
             "name": "I create a new user with random email",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:27"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 894396000
+              "duration": 693792999
             }
           },
           {
@@ -49,12 +49,12 @@
             "line": 8,
             "name": "the response status should be 201",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:44"
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
             },
             "result": {
               "status": "failed",
-              "duration": 13992000,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\node_modules\\playwright\\lib\\matchers\\expect.js:228:37)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:45:36\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\createUsersSteps.ts:44:70)"
+              "duration": 8217099,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
             }
           },
           {
@@ -63,7 +63,7 @@
             "line": 9,
             "name": "the response status text should be \"Created\"",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:48"
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
             },
             "result": {
               "status": "skipped",
@@ -76,7 +76,7 @@
             "line": 10,
             "name": "the response should contain the user ID",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:52"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
             },
             "result": {
               "status": "skipped",
@@ -89,7 +89,7 @@
             "line": 11,
             "name": "the response should contain the user name \"PlayWrightDemo\"",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:58"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:69"
             },
             "result": {
               "status": "skipped",
@@ -102,7 +102,7 @@
             "line": 12,
             "name": "the response should contain the user email",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:74"
             },
             "result": {
               "status": "skipped",
@@ -112,10 +112,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 14,
+            "line": 13,
             "name": "I fetch the user by ID",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:68"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:79"
             },
             "result": {
               "status": "skipped",
@@ -125,10 +125,23 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
+            "line": 14,
             "name": "the response status should be 200",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:44"
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response status text should be \"OK\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
             },
             "result": {
               "status": "skipped",
@@ -139,9 +152,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "the response status text should be \"OK\"",
+            "name": "the response should contain the user ID",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:48"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
             },
             "result": {
               "status": "skipped",
@@ -152,9 +165,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 17,
-            "name": "the response should contain the user ID",
+            "name": "the response should contain the user name \"PlayWrightDemo\"",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:52"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:69"
             },
             "result": {
               "status": "skipped",
@@ -165,22 +178,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "the response should contain the user name \"PlayWrightDemo\"",
-            "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:58"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
             "name": "the response should contain the user email",
             "match": {
-              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:74"
             },
             "result": {
               "status": "skipped",
@@ -192,7 +192,364 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7459000
+              "duration": 6189300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "create-user-post-call-test;create-a-new-user-with-pojo-and-verify-the-response",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Create a new user with Pojo and verify the response",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23913800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a new API request context is created",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12023400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I create a new user using POJO with random email",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 536131599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6065699,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the response status text should be \"Created\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the response should contain the user details",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5466300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "create-user-post-call-test;create-a-new-user-using-pojo-lombok-and-verify-the-response",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Create a new user using Pojo Lombok and verify the response",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2695400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a new API request context is created",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 576900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I create a new user with random email using builder pattern",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219484499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1530600,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the response status text should be \"Created\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "the response should contain the user details",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2470699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "create-user-post-call-test;create-a-new-user-with-json-and-verify-the-response",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Create a new user with JSON and verify the response",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3249300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a new API request context is created",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 665700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I create a new user with JSON string",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:132"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153214299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1062899,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the response status text should be \"Created\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "the response should contain the user ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the response should contain the user name \"testingAPI\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I fetch the user by ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the response status text should be \"OK\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response should contain the user ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:63"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the response should contain the user name \"testingAPI\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:69"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2655899
             }
           }
         ],
@@ -212,6 +569,175 @@
     "elements": [
       {
         "description": "",
+        "id": "delete-user-test;create-a-new-user,-delete-the-user,-and-verify-deletion",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Create a new user, delete the user, and verify deletion",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7419899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a new API request context is created",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1074099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I create a new user with random email using builder pattern",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198114199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 500799,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the JSON response should contain the user ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\deleteUserSteps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I delete the user by ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\deleteUserSteps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the delete response status should be 204",
+            "match": {
+              "location": "src\\test\\api\\steps\\deleteUserSteps.ts:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fetch the user by ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:79"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the response status should be 404",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the response status text should be \"Not Found\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response should contain \"Resource not found\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\deleteUserSteps.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1643299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-user-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Delete User Test",
+    "tags": [],
+    "uri": "src\\test\\api\\features\\deleteUsers.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "api-call-tests;get-specific-user",
         "keyword": "Scenario",
         "line": 3,
@@ -222,7 +748,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 26211299
+              "duration": 2534499
             }
           },
           {
@@ -235,7 +761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16688000
+              "duration": 4868499
             }
           },
           {
@@ -248,7 +774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 758864599
+              "duration": 235387600
             }
           },
           {
@@ -261,7 +787,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15925199
+              "duration": 7355799
             }
           },
           {
@@ -274,7 +800,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2470299
+              "duration": 1865399
             }
           },
           {
@@ -287,7 +813,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 47660700
+              "duration": 54069400
             }
           },
           {
@@ -295,7 +821,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 11597599
+              "duration": 2367000
             }
           }
         ],
@@ -314,7 +840,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3353699
+              "duration": 1983700
             }
           },
           {
@@ -327,7 +853,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7554500
+              "duration": 3799300
             }
           },
           {
@@ -340,7 +866,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 213642799
+              "duration": 191978599
             }
           },
           {
@@ -353,7 +879,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6085099
+              "duration": 7557299
             }
           },
           {
@@ -366,7 +892,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2213499
+              "duration": 1796500
             }
           },
           {
@@ -379,7 +905,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 51806699
+              "duration": 77984899
             }
           },
           {
@@ -387,7 +913,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6388800
+              "duration": 2995000
             }
           }
         ],
@@ -406,7 +932,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3402200
+              "duration": 2782300
             }
           },
           {
@@ -419,7 +945,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 198438599
+              "duration": 157482299
             }
           },
           {
@@ -432,7 +958,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25662200
+              "duration": 11169799
             }
           },
           {
@@ -445,7 +971,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1723700
+              "duration": 1894199
             }
           },
           {
@@ -458,7 +984,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 950500
+              "duration": 717300
             }
           },
           {
@@ -471,7 +997,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12667999
+              "duration": 10839899
             }
           },
           {
@@ -479,7 +1005,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4855600
+              "duration": 3180000
             }
           }
         ],
@@ -498,7 +1024,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7435999
+              "duration": 1597200
             }
           },
           {
@@ -511,7 +1037,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 469140300
+              "duration": 203633399
             }
           },
           {
@@ -524,7 +1050,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7770000
+              "duration": 7064000
             }
           },
           {
@@ -537,7 +1063,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12881499
+              "duration": 7672000
             }
           },
           {
@@ -545,7 +1071,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2498999
+              "duration": 2246100
             }
           }
         ],
@@ -559,5 +1085,187 @@
     "name": "API Call Tests",
     "tags": [],
     "uri": "src\\test\\api\\features\\getUsers.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "update-user-put-call-with-pojo-lombok-test;create-a-new-user,-update-the-user,-and-verify-the-update",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Create a new user, update the user, and verify the update",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1458699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a new API request context is created",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 387399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I create a new user with random email using builder pattern",
+            "match": {
+              "location": "src\\test\\api\\steps\\createUsersSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227852699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 555700,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:41:25\n    at step (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:33:23)\n    at Object.next (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:14:53)\n    at C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:8:71\n    at __awaiter (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:4:12)\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\UpdateUsersSteps.ts:40:70)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response status text should be \"Created\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the JSON response should contain the user ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\deleteUserSteps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I update the user status to inactive and name to \"Inactive_User\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the update response status should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fetch the updated user by ID",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:40"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response status text should be \"OK\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the response should contain the updated user details",
+            "match": {
+              "location": "src\\test\\api\\steps\\UpdateUsersSteps.ts:48"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2527599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "update-user-put-call-with-pojo-lombok-test",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Update User PUT Call With POJO Lombok Test",
+    "tags": [],
+    "uri": "src\\test\\api\\features\\updateUsers.feature"
   }
 ]

@@ -1,4 +1,4 @@
-import { Given, When, Then, Before, After } from '@cucumber/cucumber';
+import { When, Then } from '@cucumber/cucumber';
 import { expect, APIRequestContext, APIResponse, request } from '@playwright/test';
 import { User } from '../../../../data/User';
 import { Users } from '../../../../data/Users';
