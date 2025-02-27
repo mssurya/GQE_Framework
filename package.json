@@ -4,10 +4,9 @@
   "description": "GQE-Playwright Framework with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test",
-    "test:getUsers": "cucumber-js src/test/api/features/getUsers.feature",
-    "test:createUserOperations": "cucumber-js C:/Users/MAJSHANM/git/GQE_Framework/src/test/api/features/createUserOperations.feature",
-    "test:single": "npx playwright test Login.test.ts --project=Chrome",
+    "test": "npx cucumber-js",
+    "test:getUsers": "npx cucumber-js C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\features\\getUsers.feature",
+    "test:createUserOperations": "cucumber-js C:/Users/MAJSHANM/git/GQE_Framework/src/test/api/features/createUserOperations.feature",    
     "test:parallel": "npx playwright test --grep @Smoke --project=Chrome",
     "test:serial": "npx playwright test --grep @Smoke --workers=1 --project=Chrome",
     "test:ui": "npx playwright test --grep @Smoke --ui",

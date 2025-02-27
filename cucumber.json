@@ -3,7 +3,7 @@
       "formatOptions": {
         "snippetInterface": "async-await"
       },
-      "paths": ["src/test/api/features/*.feature","src/test/e2e_UI/features/*.feature"],
+      "paths": ["features/**/*.feature"],
       "require": ["src/test/api/steps/*.ts","src/test/e2e_UI/steps/*.ts"],
       "requireModule": ["ts-node/register"],
       "format": [
