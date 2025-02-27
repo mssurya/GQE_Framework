@@ -1,9 +1,9 @@
 import { TestInfo, test as baseTest } from '@playwright/test';
-import { LoginPage } from '@pages/LoginPage';
-import { ElementsPage } from '@pages/ElementsPage';
-import { AlertsFrameWindowsPage } from '@pages/AlertsFrameWindowsPage';
-import { WidgetsPage } from '@pages/WidgetsPage';
-import { InteractionsPage } from '@pages/InteractionsPage';
+import { LoginPage } from 'pageObjects/pageRepository/LoginPage';
+import { ElementsPage } from 'pageObjects/pageRepository/ElementsPage';
+import { AlertsFrameWindowsPage } from 'pageObjects/pageRepository/AlertsFrameWindowsPage';
+import { WidgetsPage } from 'pageObjects/pageRepository/WidgetsPage';
+import { InteractionsPage } from 'pageObjects/pageRepository/InteractionsPage';
 import { WebActions } from '@lib/WebActions';
 import AxeBuilder from '@axe-core/playwright';
 
