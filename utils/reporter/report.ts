@@ -1,13 +1,15 @@
 const report = require("multiple-cucumber-html-reporter");
 
 report.generate({
-  jsonDir: "test-results",
-  reportPath: "./",
+  jsonDir: "reports/cucumber-reports",
+  reportPath: "./reports/Multiple_Cucumber_Reports",
   reportName: "GQE Playwright API Automation report",
+  pageTitle: "ReqRes API Test Autmation report",
+  displayDuration: false,
   metadata: {
     browser: {
       name: "chrome",
-      version: "60",
+      version: "112",
     },
     device: "Local test machine",
     platform: {
