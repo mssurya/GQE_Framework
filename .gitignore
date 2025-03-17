@@ -4,3 +4,8 @@ allure-results/
 allure-report/
 Downloads/
 html-report.zip/
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
