@@ -1,0 +1,253 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "students-api;get-all-students",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get all students",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13351000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the server is running",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3596599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I request the list of students",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31297799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should get a 200 status code",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1652799,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should contain the list of students",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1981299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "students-api;get-a-student-by-id",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Get a student by ID",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10873599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "the server is running",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8334800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I request the student with ID 1",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37576000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should get a 200 status code",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1012999,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should contain the student with ID 1",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5223300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "students-api;create-a-new-student",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Create a new student",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1458099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "the server is running",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I create a student with name \"Student4\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5864900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should get a 200 status code",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 181199,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response should contain the new student",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1233499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "students-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Students API",
+    "tags": [],
+    "uri": "src\\test\\api\\features\\students.feature"
+  }
+]
