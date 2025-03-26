@@ -26,8 +26,8 @@ report.generate({
       { label: "Project", value: "Demo project" },
       { label: "Release", value: "0.1.0" },
       { label: "Cycle", value: "Smoke-1" },
-      { label: "Execution Start Time", value: "Mar 17th" },
-      { label: "Execution End Time", value: "Mar 17th" }
+      { label: "Execution Start Time", value: "Mar 18th" },
+      { label: "Execution End Time", value: "Mar 18th" }
       // { label: "Execution Start Time", value: startTime },
       // { label: "Execution End Time", value: endTime }
     ],

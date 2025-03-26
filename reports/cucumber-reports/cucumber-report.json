@@ -4,82 +4,70 @@
     "elements": [
       {
         "description": "",
-        "id": "api-call-tests;get-specific-user",
+        "id": "students-api;get-all-students",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Get specific user",
+        "name": "Get all students",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 15808500
+              "duration": 13351000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I have a request context",
+            "name": "the server is running",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:14"
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 9621500
+              "duration": 3596599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I send a request to get a specific user with gender \"male\" and status \"active\"",
+            "name": "I request the list of students",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:19"
+              "location": "src\\test\\api\\steps\\students.steps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 894679299
+              "duration": 31297799
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "the response status code should be 200",
+            "name": "I should get a 200 status code",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 8162199
+              "status": "failed",
+              "duration": 1652799,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "the response should be OK",
+            "name": "the response should contain the list of students",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
+              "location": "src\\test\\api\\steps\\students.steps.ts:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 2065399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "print the response details",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 37978600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -87,7 +75,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7796399
+              "duration": 1981299
             }
           }
         ],
@@ -96,82 +84,70 @@
       },
       {
         "description": "",
-        "id": "api-call-tests;get-all-users",
+        "id": "students-api;get-a-student-by-id",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "Get all users",
+        "line": 9,
+        "name": "Get a student by ID",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 18660599
+              "duration": 10873599
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 10,
+            "name": "the server is running",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8334800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
             "line": 11,
-            "name": "I have a request context",
+            "name": "I request the student with ID 1",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:14"
+              "location": "src\\test\\api\\steps\\students.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 10867000
+              "duration": 37576000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 12,
-            "name": "I send a request to get all users",
+            "name": "I should get a 200 status code",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:23"
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 776007999
+              "status": "failed",
+              "duration": 1012999,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 13,
-            "name": "the response status code should be 200",
+            "name": "the response should contain the student with ID 1",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
+              "location": "src\\test\\api\\steps\\students.steps.ts:33"
             },
             "result": {
-              "status": "passed",
-              "duration": 8838300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the response should be OK",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4516900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "print the response details",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23767900
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -179,7 +155,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 5587199
+              "duration": 5223300
             }
           }
         ],
@@ -188,82 +164,70 @@
       },
       {
         "description": "",
-        "id": "api-call-tests;dispose-the-response-after-getting-the-response-of-users",
+        "id": "students-api;create-a-new-student",
         "keyword": "Scenario",
-        "line": 17,
-        "name": "Dispose the response after getting the response of Users",
+        "line": 15,
+        "name": "Create a new student",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2090199
+              "duration": 1458099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
+            "line": 16,
+            "name": "the server is running",
+            "match": {
+              "location": "src\\test\\api\\steps\\courses.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I create a student with name \"Student4\"",
+            "match": {
+              "location": "src\\test\\api\\steps\\students.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5864900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
             "line": 18,
-            "name": "a request to the users endpoint",
+            "name": "I should get a 200 status code",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:84"
+              "location": "src\\test\\api\\steps\\courses.steps.ts:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 216762499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "the response is received",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:88"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11023199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "the response status code should be 200",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1676500
+              "status": "failed",
+              "duration": 181199,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'status')\n    at World.<anonymous> (C:\\Users\\MAJSHANM\\git\\GQE_Framework\\src\\test\\api\\steps\\courses.steps.ts:21:19)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "the response should be OK",
+            "line": 19,
+            "name": "the response should contain the new student",
             "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:31"
+              "location": "src\\test\\api\\steps\\students.steps.ts:38"
             },
             "result": {
-              "status": "passed",
-              "duration": 1131699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "the response body is disposed",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:100"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13901499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -271,73 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4467400
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "api-call-tests;dispose-the-response-after-getting-the-response-of-specific-users",
-        "keyword": "Scenario",
-        "line": 24,
-        "name": "Dispose the response after getting the response of Specific Users",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1855000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 25,
-            "name": "a request to the specific user endpoint",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:119"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 742036700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "the second response is received",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:123"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8418099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "the specific user response body is also disposed",
-            "match": {
-              "location": "src\\test\\api\\steps\\getUsersSteps.ts:129"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13960100
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 3232700
+              "duration": 1233499
             }
           }
         ],
@@ -345,11 +243,11 @@
         "type": "scenario"
       }
     ],
-    "id": "api-call-tests",
+    "id": "students-api",
     "line": 1,
     "keyword": "Feature",
-    "name": "API Call Tests",
+    "name": "Students API",
     "tags": [],
-    "uri": "src\\test\\api\\features\\getUsers.feature"
+    "uri": "src\\test\\api\\features\\students.feature"
   }
 ]
