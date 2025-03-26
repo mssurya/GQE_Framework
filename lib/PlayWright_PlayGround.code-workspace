@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../playwright-typescript-playwright-test"
+		},
+		{
+			"name": "GQE_Framework",
+			"path": ".."
+		},
+		{
+			"path": "../../playwright-cucumber-tests"
+		},
+		{
+			"name": "Playwright_Cucumber_Allure",
+			"path": "../../Playwright_Cucumber_Allure"
+		},
+		{
+			"path": "../../../OneDrive - Capgemini/Documents/ANZ_Documnets/NodeJsWebService/express"
+		}
+	],
+	"settings": {}
+}

@@ -11,13 +11,13 @@ if (!ENV || ![`qa`, `dev`, `qaApi`, `devApi`].includes(ENV)) {
 
 const reportConfig: OrtoniReportConfig = {
   base64Image: true,
-  title: "Playwright Framework with Typescript",
+  title: "GQE Playwright Framework with Typescript",
   showProject: true,
   filename: "OrtoniHtmlReport",
-  authorName: "Akshay Pai",
+  authorName: "GQE-MS Surya",
   preferredTheme: "dark",
   folderPath: "html-report",
-  projectName: "Playwright Framework with Typescript",
+  projectName: "GQE Playwright Framework with Typescript",
 }
 
 const config: PlaywrightTestConfig = {
@@ -32,7 +32,7 @@ const config: PlaywrightTestConfig = {
   retries: 0,
 
   //Reporters
-  reporter: [[`./CustomReporterConfig.ts`], [`allure-playwright`], [`html`, { outputFolder: 'html-report', open: 'never' }],['ortoni-report', reportConfig]],
+  reporter: [[`./CustomReporterConfig.ts`], [`allure-playwright`, { resultsDir: 'reports/allure-reports' }], [`html`, { outputFolder: 'html-report', open: 'never' }],['ortoni-report', reportConfig]],
 
   projects: [
     {
